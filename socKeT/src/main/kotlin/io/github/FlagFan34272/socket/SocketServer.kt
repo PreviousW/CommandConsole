@@ -23,7 +23,7 @@ class SocketServer(private val port: Int = 3000) {
                 val res = request.decodeToString().strip()
                 println(res)
 
-                if (res.contains("!!WebServer!!")) { //이 부분을 바꿔 자신만의 로그인 소켓 데이터 생성하기.
+                if (res.contains(INSTANCE.config.getString("Settings.Socket-Client-Data-Code").toString())) { //이 부분을 바꿔 자신만의 로그인 소켓 데이터 생성하기.
                     println("${client.inetAddress.hostAddress} is a valid connect.")
                     val outputStream = client.getOutputStream()
                     outputStream.write("Server connected successfully!".toByteArray())
