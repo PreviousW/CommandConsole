@@ -1,0 +1,8 @@
+name: socket
+version: 1.0.0
+main: io.github.FlagFan34272.socket.SocketManager
+api-version: 1.20
+libraries:
+    - io.github.monun:kommand-core:3.1.6
+    - io.github.monun:invfx-core:3.3.0
+    - org.mongodb:mongodb-driver-sync:4.3.3
