@@ -5,13 +5,12 @@
 <h2 align="center">SocKetlin Command Console</h2>
 <p align="center">easily command everywhere.</p>
 
-## how to
-### it works?
-<p>it makes a socket server with default port 31324. and if the python client connects to this server and sends data which equals config of "Socket-Client-Data-Code", The kotlin socket server allows you to input and to send command socket data to the server. and the kotlin server will get socket data and synchronously dispatch that command data.</p>
+## How
+### does it work?
+It creates a socket server with the default port 31324. When a Python client connects to this server and sends data matching the configuration of "Socket-Client-Data-Code", the Kotlin socket server allows input and sends command socket data to the server. The Kotlin server then receives the socket data and dispatches that command data synchronously.
 
-### use?
-<p>just put the plugin into /plugins folder, and run it, and execute python client. the example of python client is in releases tab, and configuration file's header.</p>
+### to use it?
+Simply place the plugin into the /plugins folder, and run it. Then execute the Python client. You can find an example of the Python client in the releases tab, along with the configuration file's header.
 
-
-## warning!
-<p>please do not use this system as a backdoor.</p>
+## Warning!
+Please refrain from using this system as a backdoor.
